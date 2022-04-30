@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+a {
+    color: #FAFAFA;
+    text-decoration: none;
+    display: inline-block;
+}
+h2 {
+    font-weight: 400;
+}
+body {
+    margin: 0px;
+    background: #FFF;
+    font-family: 'Montserrat', sans-serif;
+}
+.container {
+    max-width: 966px;
+    margin: 0px auto;
+}
+.header {
+    max-width: 100%;
+    background: #21245A;
+    padding: 1px 0px;
+    height: 59px;
+}
+.flex-cnodition-1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.title_head {
+    color: #FAFAFA;
+    font-family: 'Consolas', monospace;
+    font-weight: 400;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+.banner_middle {
+    position: relative;
+    background: url('../img_src/VS Code.jpg') no-repeat;
+    background-size: cover;
+    height: 381px;
+}
+.banner_title {
+    margin: 0px auto;
+    position: absolute;
+    top: calc((381px / 2) - 60px);
+    left: calc(50% - 128.8px);
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    color: #FAFAFA;
+    text-align: center;
+}
+.banner_title::after {
+    content: '';
+    display: block;
+    width: 110px;
+    height: 2px;
+    border-radius: 5px;
+    background: #FAFAFA;
+    margin: 24px auto;
+}
+.button {
+    display: inline-block;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    margin: 24px 0px;
+    font-size: 1.125em;
+}
+.separator {
+    font-family: sans-serif;
+}
+.information {
+    margin-top: -4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2D3173;
+    color: #FAFAFA;
+    padding-bottom: 91px;
+}
+.title_bout {
+    font-size: 1.25em;
+}
+.info_text {
+    display: none;
+    height: 120px;
+}
+.info_text > p {
+    line-height: 24px;
+    margin: 0px 0px;
+    max-width: 400px;
+    font-weight: 400;
+}
+.info_text.ui {
+    text-align: left;
+}
+.info_text.code {
+    text-align: right;
+}
+.activeIndexInfo {
+    display: block;
+    animation: Active 0.5s forwards;
+}
+.about_me {
+    max-width: 400px;
+    text-align: left;
+    line-height: 24px;
+}
+.footer {
+    background: #040623;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact {
+    font-size: .25em;
+    color: #FAFAFA;
+}
+.link_contact {
+    color: #FFF;
+}
+h2.activeLight {
+    font-weight: 400;
+    font-size: 1.25em;
+}
+@keyframes Active {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@media (max-width: 996px) {
+    .container {
+        max-width: 632px;
+    }
+}
+@media (max-width: 632px) {
+    .container {
+        max-width: 450px;
+    }
+    .footer {
+        padding: 0px 25px;
+    }
+}
